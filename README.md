@@ -113,7 +113,11 @@ The SQL files can be executed in PostgreSQL in the following order:
 ```text
 01 → 02 → 03 → 04 → 05 → 06
 ```
+### Business Recommendations
 
+- Life claims should receive closer monitoring because they represent a disproportionately high share of total claim value.
+- High-value claim monitoring should focus primarily on insurance type rather than individual agents or vendors, since no strong concentration was observed at agent or vendor level.
+- Reporting-delay patterns should be investigated further, especially the 5-day concentration observed in some segments.
 ---
 
 ## [TR] Türkçe
@@ -228,3 +232,8 @@ SQL dosyaları PostgreSQL üzerinde sırayla çalıştırılabilir:
 01 → 02 → 03 → 04 → 05 → 06
 ```
 
+### İş Önerileri
+
+- Toplam claim tutarındaki yüksek payı nedeniyle Life sigorta türü daha yakından izlenebilir.
+- High-value claim takibinde agent veya vendor yerine öncelikle sigorta türüne odaklanmak daha anlamlı görünmektedir; çünkü agent ve vendor bazında belirgin bir yoğunlaşma görülmemiştir.
+- Bazı segmentlerde görülen 5 günlük reporting delay yoğunlaşması daha detaylı incelenebilir.
