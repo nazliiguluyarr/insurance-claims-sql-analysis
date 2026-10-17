@@ -99,6 +99,12 @@ Focuses on vendor involvement, agent/vendor-level analysis, reporting delay and 
 - High-value claims are spread across **421 different agents**. The highest number for a single agent is only **4**.
 - High-value risk is therefore strongly concentrated by insurance type, but not by agent or vendor.
 
+### Business Recommendations
+
+- Life claims should receive closer monitoring because they represent a disproportionately high share of total claim value.
+- High-value claim monitoring should focus primarily on insurance type rather than individual agents or vendors, since no strong concentration was observed at agent or vendor level.
+- Reporting-delay patterns should be investigated further, especially the 5-day concentration observed in some segments.
+  
 ### Data Quality and Limitations
 
 - NULL values in `vendor_id` were not automatically treated as data errors.
@@ -113,11 +119,7 @@ The SQL files can be executed in PostgreSQL in the following order:
 ```text
 01 → 02 → 03 → 04 → 05 → 06
 ```
-### Business Recommendations
 
-- Life claims should receive closer monitoring because they represent a disproportionately high share of total claim value.
-- High-value claim monitoring should focus primarily on insurance type rather than individual agents or vendors, since no strong concentration was observed at agent or vendor level.
-- Reporting-delay patterns should be investigated further, especially the 5-day concentration observed in some segments.
 ---
 
 ## [TR] Türkçe
@@ -217,6 +219,12 @@ Vendor involvement, agent/vendor bazlı analizler, reporting delay ve high-value
 - High-value claimler **421 farklı agent** arasında dağılmış durumda. Tek bir agentta görülen en yüksek sayı yalnızca **4**.
 - Bu nedenle high-value risk sigorta türü açısından Life'ta yoğunlaşırken, agent veya vendor bazında belirgin bir yoğunlaşma göstermiyor.
 
+### İş Önerileri
+
+- Toplam claim tutarındaki yüksek payı nedeniyle Life sigorta türü daha yakından izlenebilir.
+- High-value claim takibinde agent veya vendor yerine öncelikle sigorta türüne odaklanmak daha anlamlı görünmektedir; çünkü agent ve vendor bazında belirgin bir yoğunlaşma görülmemiştir.
+- Bazı segmentlerde görülen 5 günlük reporting delay yoğunlaşması daha detaylı incelenebilir.
+
 ### Veri Kalitesi ve Sınırlamalar
 
 - `vendor_id` alanındaki NULL değerler doğrudan veri hatası olarak kabul edilmedi.
@@ -231,9 +239,3 @@ SQL dosyaları PostgreSQL üzerinde sırayla çalıştırılabilir:
 ```text
 01 → 02 → 03 → 04 → 05 → 06
 ```
-
-### İş Önerileri
-
-- Toplam claim tutarındaki yüksek payı nedeniyle Life sigorta türü daha yakından izlenebilir.
-- High-value claim takibinde agent veya vendor yerine öncelikle sigorta türüne odaklanmak daha anlamlı görünmektedir; çünkü agent ve vendor bazında belirgin bir yoğunlaşma görülmemiştir.
-- Bazı segmentlerde görülen 5 günlük reporting delay yoğunlaşması daha detaylı incelenebilir.
