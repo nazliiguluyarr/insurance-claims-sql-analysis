@@ -56,7 +56,7 @@ Main SQL concepts used in the project:
 ### File Structure
 
 ```text
-sql/
+SQL/
 ├── 01_data_validation.sql
 ├── 02_duplicate_data_check.sql
 ├── 03_null_check.sql
@@ -176,7 +176,7 @@ Projede kullandığım başlıca SQL yapıları:
 ### Dosya Yapısı
 
 ```text
-sql/
+SQL/
 ├── 01_data_validation.sql
 ├── 02_duplicate_data_check.sql
 ├── 03_null_check.sql
